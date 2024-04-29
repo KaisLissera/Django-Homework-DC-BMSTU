@@ -6,6 +6,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 from quality_control.models import BugReport, FeatureRequest
 from quality_control.forms import BugReportForm, FeatureRequestForm
+
 #FBV
 
 def index(request):
