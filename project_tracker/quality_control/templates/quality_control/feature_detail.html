@@ -2,8 +2,8 @@
 
 {% block content %}
     <h2>{{ feature.title }}</h2>
-    <a href="{% url 'quality_control:update_feature' feature_id=feature.id %}">Изменить отчёт об ошибке</a><br>
-    <a href="{% url 'quality_control:delete_feature' feature_id=feature.id %}" onclick="return confirm('Вы уверены, что хотите удалить отчёт об ошибке?');">Удалить отчёт об ошибке</a>
+    <a href="{% url 'quality_control:update_feature' feature_id=feature.id %}">Изменить запрос на улучшение</a><br>
+    <a href="{% url 'quality_control:delete_feature' feature_id=feature.id %}" onclick="return confirm('Вы уверены, что хотите удалить запрос на улучшение?');">Удалить запрос на улучшение</a>
     <p><b>Описание: </b>{{ feature.description }}<p>
     <p><b>Статус: </b> {{ feature.get_status_display }}</p>
     <p><b>Приоритет: </b> {{ feature.get_priority_display }}</p>
